@@ -1,0 +1,30 @@
+variable "common_tags" {
+  default = {
+    Project     = "roboshop"
+    Environment = "prod"
+    Terraform   = "true"
+  }
+}
+
+variable "project_name" {
+  default = "roboshop"
+}
+variable "environment" {
+  default = "prod"
+}
+
+
+variable "tags" {
+  default = {
+    Component= "payment"
+  }
+}
+
+
+variable "zone_name" {
+  default = "mvaws.online"
+}
+
+variable "iam_instance_profile" {
+  default = "EC2instanceforshell"
+}
