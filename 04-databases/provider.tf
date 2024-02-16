@@ -6,10 +6,10 @@ terraform {
     }  
   }
   backend "s3" {
-    bucket = "mvaws-state-dev"
+    bucket = "mvaws-state-prod"
     key    = "databases"
     region = "us-east-1"
-    dynamodb_table = "locking-dev"
+    dynamodb_table = "locking-prod"
   }
 }
 

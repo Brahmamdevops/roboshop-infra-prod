@@ -62,7 +62,7 @@ resource "null_resource" "web" {
     # Bootstrap script called with private_ip of each node in the cluster
     inline = [
       "chmod +x /tmp/bootstrap.sh",
-      "sudo sh /tmp/bootstrap.sh web prod"
+      "sudo sh /tmp/bootstrap.sh web ${var.environment}"
     ]
   }
 }
